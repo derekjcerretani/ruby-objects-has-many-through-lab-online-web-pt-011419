@@ -18,13 +18,13 @@ class Artist
   def new_song(name, genre)
     song = Song.new(name, self, genre)
   end
-
+=begin
   def songs
     Song.all.select do |song|
       song.artist == self
     end
   end
-
+=end
   def genres
     Song.all.map do |song|
       song.genre
